@@ -1,0 +1,80 @@
+Topics:
+
+  Basics:
+
+    ES5 -> Var, ES6 -> Let, Const
+
+    Arrays & Object
+
+    Iteration:
+      Array - map, filter, find, findIndex, foreach, reduce
+      Object - keys, values, for...in 
+        map reference of array elements & array objects
+
+  ES5 vs ES6 ---> Features Of ES6
+
+    Template Literals
+    Default Parameters
+    Enhanced Object Literals
+    Arrow Function
+    Object/Array Destructuring
+    Rest Spread 
+
+    OOP 
+      this, function, class initialization
+
+  Asynchronous Programming
+    Callback ---> function passed as param to other
+      Modular/Readability/Reusable Codes
+    Promise
+      Object representation of eventual completion of success/failure of an Asynchronous operation
+      states:
+        pending
+        fufilled
+        reject
+
+      accessing values promise
+        .then
+        .catch
+      
+      Promise Chaining ---> when then return a promise itself we need to do a .then on top
+        .then().then()
+      
+      Promise.all() ---> Combing Multiple promises into a single which gets fullfilled with all the values of promises and reject if one of the promise has failed
+
+    API ---> Application Programming Interface
+
+      APIs are the communication between services( backend, front-end, payment, ... ) can be using JSON etc...
+
+    State of an application using APIs ---> REST APIs --> representational state transfer
+
+    Fetch -> Interface to make an api call
+      then ---> response --> convert response to json -> promsie .then (json -> operation on json)
+    
+    CRUD --> 
+      Read => Fetch
+      Create => Fetch with Method POST
+      Update => Fetch with Method PUT
+      Delete => Fetch with Method DELETE
+
+    async await ---> 
+      making a block of statement behave like async along with async operation  
+        async {
+          const response = await fetch("api-url"); ---> async action
+          const json = await response.json(); ---> async action 
+          console.log(json); ----> this line waits for the completion above two async actions
+        }
+
+    Publice APIs
+
+      Public APIs are the open-source information service in various categories 
+
+      An application utilize those APIs to build an application
+
+      when You need to use a public api
+        Know Your requirement
+        search for an api
+        select an apis with following criteria:
+          Use APIs which has HTTPS & CORS --> Cross Origin Resources Sharing enabled
+          If Signing is fine Go for Auth, HTTPS, CORS enabled
+          CORS -> Cross Origin Resource Sharing
